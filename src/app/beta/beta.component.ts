@@ -13,7 +13,7 @@ export class BetaComponent implements OnInit {
   constructor(private _dataService: DataService) { }
 
   ngOnInit() {
-    this.numbers = this._dataService.betaNumbers;
+    this.numbers = this._dataService.retrieveBetaNumbers();
   }
 
   addToSequence() {

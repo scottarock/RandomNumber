@@ -10,6 +10,14 @@ export class DataService {
 
   constructor() { }
 
+  retrieveAlphaNumbers(): number[] {
+    return this.alphaNumbers;
+  }
+
+  retrieveBetaNumbers(): number[] {
+    return this.betaNumbers;
+  }
+
   generateAlphaRandom(): void {
     this.alphaNumbers.push(Math.floor(Math.random() * 10 + 1))
   }

@@ -13,7 +13,7 @@ export class AlphaComponent implements OnInit {
   constructor(private _dataService: DataService) { }
 
   ngOnInit() {
-    this.numbers = this._dataService.alphaNumbers;
+    this.numbers = this._dataService.retrieveAlphaNumbers();
   }
 
   addToSequence() {
